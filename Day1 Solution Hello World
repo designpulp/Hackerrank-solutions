@@ -1,0 +1,65 @@
+Explanation:-
+
+as we know that int 1 = 4; are already define so we have to take another integer j, after that we will take a user input and store the value in j then we will add i + j value like below.
+
+int i = 4;
+int j = 12;
+cout << i + j <<endl;
+
+So the i + j value will be added and print the sum of both numbers.
+
+Now repeat the same process for double data type so add both double value fixed value and user input 
+value and print the output but remember as you know that double precision value is more than 1 so 
+this is a problem for avoiding this type of problem we can fix the double value by using setprecision(value) means how many digits you want after pointer and fraction number. Here you can see that we fixed value to one that's we use setprecision(1).
+
+double d = 4.0;
+double e = 4.0;
+
+cout<<fixed<<setprecision(1)<<d<<endl;
+
+Now next step is for the string is very simple we can print the first string and then user input sting 
+but we have one problem we can not accept space user input string so for that we use getline(cin,t). if you don't know about getline() function see the example. Hackerrank Solution For Day 0: Hello, World.
+
+string s = " HackerRank ";
+string t ; // user input.
+
+cout<<s<<t;
+
+I hope now you can understand a full problem if you have any query send an email. 
+You can directly submit your solution copy the colored area code and paste into Hacker Rank Editor.
+
+#include <iostream>
+#include <iomanip>
+#include <limits>
+
+using namespace std;
+
+int main() 
+{
+    int i = 4;
+    double d = 4.0;
+    string s = "HackerRank ";
+
+    int j;
+    double e;
+    string t;
+
+    cin>>j;
+    cin>>e;
+
+    cin.ignore();  
+    getline(cin,t);
+
+    cout<<i+j<<endl;
+
+    d=d+e;
+
+    cout<<fixed<<setprecision(1)<<d<<endl;
+
+    cout<<s<<t;
+
+    return 0;
+}
+
+Output: 
+
